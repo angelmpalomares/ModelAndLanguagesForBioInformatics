@@ -1,7 +1,7 @@
 # define a function for computing the product of two matrices
 
 def matrix_product(matrix1, matrix2):
-    idx_1 = 0
+    
     _result_matrix = []
     _n_columns_matrix2 = len(matrix2[0])
     for row in matrix1:
@@ -11,7 +11,7 @@ def matrix_product(matrix1, matrix2):
             _temp.append(sum([(row[idx]*matrix2[idx][idx_2]) for idx in range(len(matrix1[0]))]))
             idx_2 += 1
         _result_matrix.append(_temp)
-        idx_1 += 1
+        
     return _result_matrix
 
 if __name__ == "__main__":
