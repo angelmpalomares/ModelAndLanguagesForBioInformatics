@@ -34,6 +34,9 @@ def ascending(list: list) -> bool:
     :param list: a non empty list to check
     :return: if the list is in ascending order
     """
+    if(len(list)==1):
+        return True
+    
     for i in range(len(list) - 1):
         if list[i] < list[i + 1]:
             return True
